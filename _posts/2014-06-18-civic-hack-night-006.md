@@ -5,13 +5,15 @@ layout: post
 title: Civic Hack Night 006
 categories: 
   - eventos
-sponsor: "<a href=\"http://codeandomexico.org\">Codeando México</a>"
+sponsor: <a href="http://codeandomexico.org">Codeando México</a>
 links: 
-  - "<a href=\"http://hackingmty.org\">Hacking Monterrey</a>"
-  - "<a href=\"https://plus.google.com/u/0/communities/117199441327944932251\">Google+</a>"
-  - "<a href=\"https://github.com/hackingmty\">Hacking Monterrey en Github</a>"
+  - <a href="http://hackingmty.org">Hacking Monterrey</a>
+  - <a href="https://plus.google.com/u/0/communities/117199441327944932251">Google+</a>
+  - <a href="https://github.com/hackingmty">Hacking Monterrey en Github</a>
+  - <a href="https://github.com/hackingmty">Proyecto ¿Cómo Vamos Nuevo León? en Github</a>
+  - <a href="http://datamx.io">Plataforma de datos abiertos de Codeando México</a>
 event_id: 6
-meetup: "http://www.meetup.com/Open-Data-Monterrey/events/189364582/"
+meetup: http://www.meetup.com/Open-Data-Monterrey/events/189364582/
 published: true
 ---
 
@@ -25,4 +27,4 @@ Es importante resaltar que los datos se obtuvieron de la plataforma de *datos ab
 
 También discutimos sobre el sistema de control de versiones distribuido [Git](http://git-scm.com/), una interesante guía rápida puede encontrarse [acá](http://rogerdudler.github.io/git-guide/index.es.html).
  
-Seguidamente tuvimos el placer de ofrecer un espacio al equipo de el *Frente de Activación Ciudadana*, *Consejo Cívico* y *Bosque Urbano México* y nos presentaron su mapa de problemáticas para promover la participación ciudadana. Este mapa nos ayudará a conocer los factores que afectan la participación ciudadana en la *zona metropolitana de Monterrey* para tomar en cuenta en nuestros proyectos futuros.
+Seguidamente tuvimos el placer de ofrecer un espacio al equipo de el *Frente de Activación Ciudadana*, *Consejo Cívico* y [Bosque Urbano México](http://bosqueurbanomexico.org/) y nos presentaron su mapa de problemáticas para promover la participación ciudadana. Este mapa nos ayudará a conocer los factores que afectan la participación ciudadana en la *zona metropolitana de Monterrey* para tomar en cuenta en nuestros proyectos futuros.
