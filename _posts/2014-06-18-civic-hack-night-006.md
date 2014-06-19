@@ -1,6 +1,6 @@
 ---
 comments: true
-date: {}
+date: 2014-06-18 21:00:00
 layout: post
 title: Civic Hack Night 006
 categories: 
