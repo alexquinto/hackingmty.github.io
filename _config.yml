@@ -36,9 +36,6 @@ google_analytics: UA-50583819-1
 # data_host = 'http://civic-json.datamade.dev.work'
 data_host: http://worker.opengovhacknight.org
 
-# In order to Jekyll be compatible with Mustache we need to change Mustache's delimiter
-setMustacheDelimiter: "{{=<% %>=}}"
-
 encoding: utf-8
 timezone: America/Monterrey
 

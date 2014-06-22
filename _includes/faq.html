@@ -51,15 +51,17 @@
         )
       }
 
-    var faq_template = "{{site.setMustacheDelimiter}}\
+    {% raw %}
+    var faq_template = "\
       <tr>\
         <td>\
-          <h4><%question%></h4>\
+          <h4>{{ question }}</h4>\
         </td>\
         <td>\
-        <p><%answer%></p>\
+        <p>{{ answer }}</p>\
         </td>\
       </tr>";
+    {% endraw %}
 
       populate_table("0AoyIKc2oe9ujdG40aTI1V1czamZDLVhDSjktVlJjdGc", "faq-table", "faq-count", faq_template, [ [1,'asc'] ], [ null, null, null ], 'faq-search');
     </script>
