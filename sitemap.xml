@@ -10,6 +10,7 @@ layout: nil
 		<priority>1.0</priority>
 	</url>
 	{% for page in site.pages %}
+    {% if page.layout != 'nil' %}
 	<url>
 		<loc>{{ site.url }}{{ page.url }}</loc>
 		{% if page.date %}
@@ -20,6 +21,7 @@ layout: nil
 		<changefreq>monthly</changefreq>
 		<priority>0.9</priority>
 	</url>
+    {% endif %}
 	{% endfor %}
 	{% for post in site.posts %}
 	<url>
