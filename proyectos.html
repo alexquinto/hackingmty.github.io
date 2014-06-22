@@ -5,9 +5,11 @@ permalink: /proyectos/
 projects: true
 ---
 
-        <h1>{{ page.title }} <!--small id='project-count'></small--></h1>
+        <h1>{{ page.title }} {% comment %}<small id='project-count'></small>{% endcomment %}</h1>
         <p>Esta página aún se encuentra en construcción.</p>
-        <!--p>Open source civic tech projects from Chicago's open gov community. You can participate in three ways:</p>
+
+        {% comment %}
+        <p>Open source civic tech projects from Chicago's open gov community. You can participate in three ways:</p>
 
         <ol>
           <li>
@@ -58,4 +60,5 @@ projects: true
           </thead>
           <tbody>
           </tbody>
-        </table-->
+        </table>
+        {% endcomment %}

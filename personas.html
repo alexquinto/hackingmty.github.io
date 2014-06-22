@@ -5,17 +5,18 @@ permalink: /personas/
 people: true
 ---
 
-        <h1>{{ page.title }} <!--small id='people-count'></small--></h1>
+        <h1>{{ page.title }} {% comment %}<small id='people-count'></small>{% endcomment %}</h1>
 
         <p>Desarrolladores, diseñadores y analistas de datos que trabajan en
         <a href="/proyectos/">proyectos tecnológicos con responsabilidad cívica</a>
-        en Monterrey. <!--<a href="http://civic-json.e-vz.com/data/people.json">Vea los
-            datos que alimentan a esta página</a>-->.</p>
+        en Monterrey. {% comment %}<a href="http://civic-json.e-vz.com/data/people.json">Vea los
+            datos que alimentan a esta página</a>{% endcomment %}.</p>
 
         <br>
         <p>Esta página aún se encuentra en construcción.</p>
 
-        <!--table id='hack-night-people' class='table people'>
+        {% comment %}
+        <table id='hack-night-people' class='table people'>
           <thead>
             <tr>
               <th>Nombre</th>
@@ -26,4 +27,5 @@ people: true
           </thead>
           <tbody>
           </tbody>
-        </table-->
+        </table>
+        {% endcomment %}
