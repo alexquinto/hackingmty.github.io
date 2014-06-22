@@ -11,7 +11,7 @@ links:
   - <a href="http://cuantodebemos.mx/">¿Cuánto debemos?</a>
 event_id: 2
 meetup: http://www.meetup.com/Open-Data-Monterrey/events/172024912/
-description: Descripción de algunas aplicaciones cívicas activas en Monterrey. Algunas de ellas son: ¡Pregúntale! y ¿Cuánto debemos?.
+description: Descripción de algunas aplicaciones cívicas activas en Monterrey. Como por ejemplo ¡Pregúntale! y ¿Cuánto debemos?.
 ---
 
 Presentación de algunas *apps* cívicas activas en Monterrey, algunas de ellas
