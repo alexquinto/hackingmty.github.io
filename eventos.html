@@ -37,7 +37,10 @@ events: true
               <td>
                   <h3><small>#{{ post.event_id }}</small> <a href='{{ post.url }}' itemprop="url"><span itemprop="name">{{ post.title }}</span></a></h3>
                 <div itemprop="description">
-                  {{ post.content }}
+                    {{ post.content | split:'<!--break-->' | first }}
+                    {% if post.content contains '<!--break-->' %}
+                        <a href="{{ post.url }}">Lea más información sobre este evento &raquo;</a>
+                    {% endif %}
                 </div>
                 <ul class='list-inline'>
                   <li><span class='text-muted'>Patrocinante</span></li>

@@ -18,7 +18,11 @@ published: true
 En esta reunión se presentaron los avances en la construcción del
 sitio [Hacking Monterrey](http://hackingmty.org/), sus distintas
 secciones y las herramientas que se habían utilizado para su
-construcción, en particular se mencionaron las siguientes:
+construcción.
+
+<!--break-->
+
+En particular se mencionaron las siguientes:
 
  * [Jekyll](http://jekyllrb.com/)
  * [Git](http://git-scm.com/)

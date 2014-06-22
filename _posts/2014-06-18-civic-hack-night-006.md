@@ -19,6 +19,8 @@ published: true
 
 Como en todas las reuniones pasadas tuvimos un espacio para la presentación de los asistentes y conocer nuestros perfiles como equipo. También tuvimos la oportunidad de mostrar el sitio de [Hacking Monterrey](http://hackingmty.org "Hacking Monterrey") y se dieron a conocer las herramientas que usamos para crearlo, en particular hablamos de [Jekyll](http://jekyllrb.com/), [Github](https://github.com) y [Git](http://git-scm.com/).
 
+<!--break-->
+
 También aprovechamos la ocasión para mostrar nuestro segundo proyecto, [¿Cómo Vamos Nuevo León?](http://hackingmty.org/comovamosnl/) el cual consiste en una propuesta de esquema de visualización de los datos ofrecidos por el proyecto: [Alcalde, ¿Cómo vamos?](http://comovamosnl.org). Los *pull request* o cualquier tipo de aporte son bienvenidos, el código fuente de nuestro segundo proyecto lo puedes encontrar en nuestro repositorio público en [Github](https://github.com/hackingmty/comovamosnl).
 
 La herramienta que utilizamos para construir la visualización fue [Highcharts](http://highcharts.com), también pudo hacerse con [d3.js](http://d3js.org/).
