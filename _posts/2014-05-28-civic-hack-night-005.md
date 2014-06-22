@@ -12,7 +12,7 @@ links:
   - <a href="https://github.com/hackingmty">Hacking Monterrey en Github</a>
 event_id: 5
 meetup: http://www.meetup.com/Open-Data-Monterrey/events/185463162/
-published: true
+description: Presentación de avances en la construcción del sitio Hacking Monterrey, sus distintas secciones y las herramientas que se habían utilizado para su construcción.
 ---
 
 En esta reunión se presentaron los avances en la construcción del

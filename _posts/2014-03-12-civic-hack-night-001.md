@@ -10,6 +10,7 @@ links:
   - <a href="http://elcowork.com">El Cowork</a>
 event_id: 1
 meetup: http://www.meetup.com/Open-Data-Monterrey/events/169828952/
+description: Celebramos el inicio oficial de la brigada y se realizó en las instalaciones de El Cowork. Definimos las fundaciones de la brigada con miras a establecernos como equipo.
 ---
 
 Celebramos el inicio oficial de la brigada y se realizó en las instalaciones de

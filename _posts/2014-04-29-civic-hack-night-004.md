@@ -12,6 +12,7 @@ links:
   - <a href="https://github.com/hackingmty">Hacking Monterrey en Github</a>
 event_id: 4
 meetup: http://www.meetup.com/Open-Data-Monterrey/events/172025912/
+description: Definición del portal de la brigada, compra de dominio, creación de nuestra comunidad en Google+ así como nuestra organización en Github y lista de correo de notificaciones de eventos relevantes.
 ---
 
 Definición del [portal de la brigada][hackingmty], compra de dominio, creación de nuestra
