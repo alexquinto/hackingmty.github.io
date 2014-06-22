@@ -2,64 +2,79 @@
 layout: page
 ---
 
-<h3>
-  {% if page.previous.url %}
-    <a href='{{ page.previous.url }}'><i class='fa fa-chevron-sign-left'></i></a>
-  {% endif %}
-  {{ page.date | date: "%b %d, %Y" }}
-  {% if page.next.url %}
-    <a href='{{ page.next.url }}'><i class='fa fa-chevron-sign-right'></i></a>
-  {% endif %}
-</h3>
-<h1><small>#{{ page.event_id }}</small> {{ page.title }}</h1>
-<hr />
-
-<div class='row'>
-  <div class='col-md-7'>
-
-    {{ content }}
-
-    {% assign meetup = nil %}
-    {% if page.meetup %}
-        {% assign meetup = page.meetup %}
-    {% else %}
-        {% if site.owner.meetup %}
-            {% assign meetup = site.owner.meetup %}
-        {% endif %}
+<div itemscope itemtype="http://schema.org/Event">
+  <h3>
+    {% if page.previous.url %}
+      <a href='{{ page.previous.url }}'><i class='fa fa-chevron-sign-left'></i></a>
     {% endif %}
-
-    {% if meetup != nil %}
-        {% if site.time <= page.date %}
-        <a class='btn btn-success' href='{{ meetup }}'>RSVP &raquo;</a>
-        {% else %}
-        <p>Puedes ver la convocatoria que hicimos para esta reunión en nuestro <a href="{{ meetup }}" title="Convocatoria al {{ page.title }}">meetup</a>.</p>
-        {% endif %}
+    {% comment %}
+    The startDate itemprop must follow ISO 8601 date format
+    More info: http://schema.org/Date
+    {% endcomment %}
+    <time itemprop="startDate" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %d, %Y" }}</time>
+    {% if page.next.url %}
+      <a href='{{ page.next.url }}'><i class='fa fa-chevron-sign-right'></i></a>
     {% endif %}
+  </h3>
+  <h1><small>#{{ page.event_id }}</small> <span itemprop="name">{{ page.title }}</span></h1>
+  <hr />
 
-    {% if page.links %}
-      <hr />
-      <h4>Enlaces</h4>
-      <ul>
-      {% for link in page.links %}
-        <li>{{ link }}</li>
-      {% endfor %}
-      </ul>
-    {% endif %}
-    </div>
+  <div class='row'>
+    <div class='col-md-7'>
 
-    <div class='col-md-5'>
-      <div class='well'>
-        <h4>
-          <i class='fa fa-calendar'></i>
-          {{ site.title }}
-        </h4>
-        <div id="map"></div>
-        <p>
-          7 <abbr title="post meridiem">p. m.</abbr> cada miércoles (quincenal)<br />
-          <a href='http://www.elcowork.com/'>El Cowork</a><br />
-          <a href='http://goo.gl/VyEXww'>Av. Frida Kahlo 195 Suite 1205, San Pedro Garza García</a><br />
-        </p>
-        <p><strong>Patrocinante</strong> {{ page.sponsor }}</p>
+      <div itemprop="description">{{ content }}</div>
+
+      {% assign meetup = nil %}
+      {% if page.meetup %}
+          {% assign meetup = page.meetup %}
+      {% else %}
+          {% if site.owner.meetup %}
+              {% assign meetup = site.owner.meetup %}
+          {% endif %}
+      {% endif %}
+
+      {% if meetup != nil %}
+          {% if site.time <= page.date %}
+          <a class='btn btn-success' href='{{ meetup }}'>RSVP &raquo;</a>
+          {% else %}
+          <p>Puedes ver la convocatoria que hicimos para esta reunión en nuestro <a href="{{ meetup }}" title="Convocatoria al {{ page.title }}">meetup</a>.</p>
+          {% endif %}
+      {% endif %}
+
+      {% if page.links %}
+        <hr />
+        <h4>Enlaces</h4>
+        <ul>
+        {% for link in page.links %}
+          <li>{{ link }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+      </div>
+
+      <div class='col-md-5'>
+        <div class='well'>
+          <h4>
+            <i class='fa fa-calendar'></i>
+            {{ site.title }}
+          </h4>
+          <div id="map"></div>
+          <p>
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="doorTime">{{ page.date | date: "%I:%M" }}</time> <abbr title="post meridiem">p. m.</abbr> cada miércoles (quincenal)<br />
+            Duración: <time itemprop="duration" datetime="PT3H">3 <abbr title="horas">h.</abbr></time> <abbr title="aproximadamente">aprox.</abbr>
+          </p>
+          <div itemprop="location" itemscope itemtype="http://schema.org/LocalBusiness">
+            <a itemprop="url" href="http://elcowork.com/"><span itemprop="name">El Cowork</span></a><br />
+            <a itemprop="map" href='http://goo.gl/VyEXww'>
+              <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <span itemprop="streetAddress">Av. Frida Kahlo 195 Suite 1205</span>,<br />
+                  <span itemprop="addressLocality">San Pedro Garza García</span>,<br />
+                  <span itemprop="addressRegion">Nuevo León</span>.
+            </div>
+            </a>
+          </div>
+          <p><strong>Patrocinante</strong> {{ page.sponsor }}</p>
+      </div>
     </div>
   </div>
 </div>

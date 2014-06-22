@@ -23,24 +23,25 @@ events: true
           </thead>
           <tbody>
           {% for post in site.categories['eventos'] %}
-            <tr>
+            <tr itemscope itemtype="http://schema.org/Event">
               <td class='nowrap'>
                 <div class='well text-center'>
-                  <time datetime='{{ post.date | date: "%Y-%m-%d" }}'>
+                    <meta itemprop="startDate" content="{{ post.date | date: "%Y-%m-%d" }}">
                     <h3>{{ post.date | date: "%b %d" }}</h3>
                     <h4>{{ post.date | date: "%Y" }}</h4>
-                  </time>
                   {% if site.time <= post.date %}
-                    <a class='btn btn-success' href='http://www.meetup.com/open-data-monterrey/'>RSVP &raquo;</a>
+                    <a class='btn btn-success' href='http://www.meetup.com/open-data-monterrey/' itemprop="url">RSVP &raquo;</a>
                   {% endif %}
                 </div>
               </td>
               <td>
-                <h3><small>#{{ post.event_id }}</small> <a href='{{ post.url }}'>{{ post.title }}</a></h3>
-                {{ post.content }}
+                  <h3><small>#{{ post.event_id }}</small> <a href='{{ post.url }}' itemprop="url"><span itemprop="name">{{ post.title }}</span></a></h3>
+                <div itemprop="description">
+                  {{ post.content }}
+                </div>
                 <ul class='list-inline'>
                   <li><span class='text-muted'>Patrocinante</span></li>
-                  <li><a href='{{ post.sponsor_url }}'>{{ post.sponsor }}</a></li>
+                  <li>{{ post.sponsor }}</li>
                 </ul>
                 {% if post.links %}
                 <ul class='list-inline'>

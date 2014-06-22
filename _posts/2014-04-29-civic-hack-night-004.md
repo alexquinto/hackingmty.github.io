@@ -1,6 +1,6 @@
 ---
 comments: true
-date: 2014-04-29 21:00:00
+date: 2014-04-29T19:00:00-06:00
 layout: post
 title: Civic Hack Night 004
 categories:

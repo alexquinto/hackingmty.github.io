@@ -39,6 +39,7 @@ data_host: http://worker.opengovhacknight.org
 setMustacheDelimiter: "{{=<% %>=}}"
 
 encoding: utf-8
+timezone: America/Monterrey
 
 # http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:title/
