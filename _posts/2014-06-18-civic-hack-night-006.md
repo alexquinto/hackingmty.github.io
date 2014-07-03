@@ -12,6 +12,8 @@ links:
   - <a href="https://github.com/hackingmty">Hacking Monterrey en Github</a>
   - <a href="https://github.com/hackingmty">Proyecto ¿Cómo Vamos Nuevo León? en Github</a>
   - <a href="http://datamx.io">Plataforma de datos abiertos de Codeando México</a>
+  - <a href="https://drive.google.com/file/d/0B4yIKc2oe9ujc01pVTI2RHlibHc/edit?usp=sharing">Factores causales de la falta de participación ciudadana</a>
+  - <a href="https://drive.google.com/file/d/0B4yIKc2oe9ujNkNudFdVRDJlSHM/edit?usp=sharing">Explicación de factores causales de participación ciudadana</a>
 event_id: 6
 meetup: http://www.meetup.com/Open-Data-Monterrey/events/189364582/
 description: Como en todas las reuniones pasadas tuvimos un espacio para la presentación de los asistentes y conocer nuestros perfiles como equipo. También tuvimos la oportunidad de mostrar el sitio de Hacking Monterrey y se dieron a conocer las herramientas que usamos para crearlo, en particular hablamos de Jekyll, Github y Git. Presentamos nuevos proyectos y tuvimos como invitados a miembros del Consejo Cívico.
