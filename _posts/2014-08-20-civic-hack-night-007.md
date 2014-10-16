@@ -8,7 +8,7 @@ categories:
 sponsor: <a href="http://codeandomexico.org">Codeando México</a>
 links:
   - <a href="http://catalogo.datos.gob.mx/organization/pemex">Datos de PEMEX</a>
-event_id: 1
+event_id: 7
 meetup: http://www.meetup.com/Open-Data-Monterrey/events/200873672/
 description: Regresamos a la actividad de la Brigada ¡Con todo!
 ---

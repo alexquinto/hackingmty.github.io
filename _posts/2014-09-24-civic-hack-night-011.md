@@ -8,7 +8,7 @@ categories:
 sponsor: <a href="http://codeandomexico.org">Codeando México</a>
 links:
   - <a href="http://rdalanist.github.io/proj-civic-scrapping/#!index.md">Cuaderno de Apoyo de la Noche</a>
-event_id: 1
+event_id: 11
 meetup: http://www.meetup.com/Open-Data-Monterrey/events/208316842/
 description: ¡Juntos liberemos todos los datos!
 ---

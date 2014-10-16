@@ -8,7 +8,7 @@ categories:
 sponsor: <a href="http://codeandomexico.org">Codeando México</a>
 links:
   - <a href="http://catalogo.datos.gob.mx/organization/pemex">Datos de PEMEX</a>
-event_id: 1
+event_id: 8
 meetup: http://www.meetup.com/Open-Data-Monterrey/events/202570952/
 description: Terminamos la actividad del Análisis de PEMEX, Cierre con broche de oro (:
 ---
